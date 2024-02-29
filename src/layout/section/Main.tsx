@@ -2,9 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Button} from "../../components/Button";
-import {Icon} from "../../components/icon/Icon";
 import photo from "../../assets/images/main/main.png"
 import {Statistics} from "../../components/statistics/Statistics";
+import { Timer } from '../../components/Timer';
 
 export const Main = () => {
     return (
@@ -38,7 +38,7 @@ export const Main = () => {
                         <FlexWrapper justify={"space-between"}>
                             <div>
                                 <div>Ends in</div>
-                                <div>05:45:47</div>
+                                <Timer>05:45:47</Timer>
                             </div>
                             <div>
                                 <div>Current bid</div>
@@ -63,6 +63,7 @@ const Info = styled.div`
 `
 
 const Title = styled.h2`
+  font-size: 64px;
   margin-bottom: 20px;
   
   span {
@@ -107,5 +108,8 @@ const Promotion = styled.div`
   background: #131e3a;
   border: 1px solid #fff;
 `
+
+
+
 
 
