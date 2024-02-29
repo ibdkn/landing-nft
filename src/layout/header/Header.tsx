@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
+import { Button } from '../../components/Button';
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
-import {Button} from "../../components/button/Button";
 
 const items = ["Marketplace", "Artists", "Community", "Collections"]
 
@@ -11,7 +11,7 @@ export const Header = () => {
         <StyledHeader>
             <Logo/>
             <Menu menuItems={items}/>
-            <Button text={"Contact"}/>
+            <Button>Contact</Button>
         </StyledHeader>
     );
 };
