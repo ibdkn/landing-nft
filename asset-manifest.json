@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/landing-nft/static/css/main.e6c13ad2.css",
+    "main.js": "/landing-nft/static/js/main.d43a20aa.js",
+    "static/js/787.25eaef86.chunk.js": "/landing-nft/static/js/787.25eaef86.chunk.js",
+    "static/media/artist-image-3.png": "/landing-nft/static/media/artist-image-3.f13b4f09a2403a745455.png",
+    "static/media/main.png": "/landing-nft/static/media/main.bf2c0b0818500239f528.png",
+    "static/media/about-image-2.png": "/landing-nft/static/media/about-image-2.44fdc0e9edfd600ad3c8.png",
+    "static/media/artist-image-2.png": "/landing-nft/static/media/artist-image-2.45e6b75bd8e885696b28.png",
+    "static/media/subscribe-image-1.png": "/landing-nft/static/media/subscribe-image-1.457a4eebd169a0ccc3d6.png",
+    "static/media/artist-image-5.png": "/landing-nft/static/media/artist-image-5.451918e440e5a94f2aa1.png",
+    "static/media/artist-image-4.png": "/landing-nft/static/media/artist-image-4.863e89ed0d5d7f9d0a08.png",
+    "static/media/card-image-3.png": "/landing-nft/static/media/card-image-3.c0919270ec0dd38b9a97.png",
+    "static/media/about-image-1.png": "/landing-nft/static/media/about-image-1.e20eb7eff2c66250e1f3.png",
+    "static/media/subscribe-image-2.png": "/landing-nft/static/media/subscribe-image-2.f76823badccd2c379b7a.png",
+    "static/media/card-image-1.png": "/landing-nft/static/media/card-image-1.23fdaa4521b9a3914f4c.png",
+    "static/media/artist-image-1.png": "/landing-nft/static/media/artist-image-1.1e9a1bac6182bfabf4e6.png",
+    "static/media/card-image-2.png": "/landing-nft/static/media/card-image-2.4f64dd20d69ee36180a5.png",
+    "static/media/icons-sprite.svg": "/landing-nft/static/media/icons-sprite.d9ca9e0a9cec3abb7ab37609d85a1ff3.svg",
+    "index.html": "/landing-nft/index.html",
+    "main.e6c13ad2.css.map": "/landing-nft/static/css/main.e6c13ad2.css.map",
+    "main.d43a20aa.js.map": "/landing-nft/static/js/main.d43a20aa.js.map",
+    "787.25eaef86.chunk.js.map": "/landing-nft/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d43a20aa.js"
+  ]
+}
