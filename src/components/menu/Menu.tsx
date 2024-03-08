@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 
-
-
 export const Menu = (props: {menuItems: Array<string>}) => {
     return (
         <StyledMenu>
@@ -12,7 +10,6 @@ export const Menu = (props: {menuItems: Array<string>}) => {
                         <li key={index}><a href={"#"}>{item}</a></li>
                     )
                 })}
-
             </ul>
         </StyledMenu>
     );
@@ -21,6 +18,7 @@ export const Menu = (props: {menuItems: Array<string>}) => {
 const StyledMenu = styled.nav`
   ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     
     li {

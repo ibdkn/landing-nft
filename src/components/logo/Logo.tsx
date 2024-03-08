@@ -5,7 +5,7 @@ import {Icon} from "../icon/Icon";
 export const Logo = () => {
     return (
         <StyledLogo href={"#"}>
-            <Icon iconId={"logo"}/>
+            <Icon iconId={"logo"} width={"28"} height={"28"} viewBox={"0 0 28 28"}/>
             <Name>
                 Creative<span>art</span>
             </Name>
