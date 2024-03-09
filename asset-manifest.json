@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landing-nft/static/css/main.e6c13ad2.css",
-    "main.js": "/landing-nft/static/js/main.d43a20aa.js",
+    "main.js": "/landing-nft/static/js/main.d1721a5e.js",
     "static/js/787.25eaef86.chunk.js": "/landing-nft/static/js/787.25eaef86.chunk.js",
     "static/media/artist-image-3.png": "/landing-nft/static/media/artist-image-3.f13b4f09a2403a745455.png",
     "static/media/main.png": "/landing-nft/static/media/main.bf2c0b0818500239f528.png",
@@ -16,14 +16,15 @@
     "static/media/card-image-1.png": "/landing-nft/static/media/card-image-1.23fdaa4521b9a3914f4c.png",
     "static/media/artist-image-1.png": "/landing-nft/static/media/artist-image-1.1e9a1bac6182bfabf4e6.png",
     "static/media/card-image-2.png": "/landing-nft/static/media/card-image-2.4f64dd20d69ee36180a5.png",
-    "static/media/icons-sprite.svg": "/landing-nft/static/media/icons-sprite.d9ca9e0a9cec3abb7ab37609d85a1ff3.svg",
+    "static/media/icons-sprite.svg": "/landing-nft/static/media/icons-sprite.d030aebdc1facbf237a927e27130551c.svg",
+    "static/media/text-circle.svg": "/landing-nft/static/media/text-circle.a810f2f448eda0036f171d48e323bca9.svg",
     "index.html": "/landing-nft/index.html",
     "main.e6c13ad2.css.map": "/landing-nft/static/css/main.e6c13ad2.css.map",
-    "main.d43a20aa.js.map": "/landing-nft/static/js/main.d43a20aa.js.map",
+    "main.d1721a5e.js.map": "/landing-nft/static/js/main.d1721a5e.js.map",
     "787.25eaef86.chunk.js.map": "/landing-nft/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d43a20aa.js"
+    "static/js/main.d1721a5e.js"
   ]
 }
