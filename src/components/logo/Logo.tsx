@@ -20,10 +20,13 @@ const StyledLogo = styled.a`
 `
 
 const Name = styled.span`
+  font-family: "Canela Trial", sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 120%;
   color: #fff;
+  
+  transform: translateY(15px);
   
   span {
     color: #d3f85a;

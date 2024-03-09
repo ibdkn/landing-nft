@@ -3,21 +3,25 @@ import styled from 'styled-components';
 import {FlexWrapper} from "../FlexWrapper";
 import {Timer} from "../Timer";
 import {Button} from "../Button";
+import {theme} from "../../styles/Theme";
+import {StyledCard} from "../StyledCard";
 
 export const Promotion = () => {
     return (
         <StyledPromotion>
-            <FlexWrapper justify={"space-between"}>
-                <div>
-                    <div>Ends in</div>
-                    <Timer>05:45:47</Timer>
-                </div>
-                <div>
-                    <div>Current bid</div>
-                    <div>0.24ETH</div>
-                </div>
-            </FlexWrapper>
-            <Button>Place A Bid</Button>
+            <StyledCard>
+                <FlexWrapper justify={"space-between"}>
+                    <div>
+                        <Title>Ends in</Title>
+                        <Timer>05:45:47</Timer>
+                    </div>
+                    <div>
+                        <Title>Current bid</Title>
+                        <Text>0.24ETH</Text>
+                    </div>
+                </FlexWrapper>
+                <Button btnType={"outline"}>Place A Bid</Button>
+            </StyledCard>
         </StyledPromotion>
     );
 };
@@ -25,6 +29,28 @@ export const Promotion = () => {
 const StyledPromotion = styled.div`
   max-width: 304px;
   width: 100%;
-  background: #131e3a;
-  border: 1px solid #fff;
+
+  position: absolute;
+  right: 0;
+  bottom: -93px;
+  
+  ${Button} {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+`
+
+const Title = styled.h3`
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: ${theme.colors.accent};
+  margin-bottom: 8px;
+`
+
+const Text = styled.p`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
 `

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 type SocialPropsType = {
     iconId: string,
@@ -24,6 +25,10 @@ const SocialItem = styled.ul`
 `
 
 const SocialLink = styled.a`
-
+  color: #fff;
+  
+  &:hover {
+    color: ${theme.colors.accent};
+  }
 `
 

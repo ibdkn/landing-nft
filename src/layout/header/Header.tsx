@@ -3,23 +3,32 @@ import styled from "styled-components";
 import { Button } from '../../components/Button';
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
+import {Container} from "../../components/Container";
+import { FlexWrapper } from '../../components/FlexWrapper';
+import {theme} from "../../styles/Theme";
 
 const items = ["Marketplace", "Artists", "Community", "Collections"]
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu menuItems={items}/>
-            <Button>Contact</Button>
+            <Container>
+                <FlexWrapper align={"center"} justify={"space-between"}>
+                    <Logo/>
+                    <Menu menuItems={items}/>
+                    <Button btnType={"primary"}>Contact</Button>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-  padding: 33px 0 23px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000;
+  padding: 28px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: ${theme.colors.primaryBg};
+  z-index: 99999;
 `

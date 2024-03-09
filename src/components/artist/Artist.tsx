@@ -12,9 +12,9 @@ export const Artist = (props: ArtistPropsType) => {
     return (
         // CHANGE IT LATER !!!!
         <StyledArtist style={{ backgroundImage: `url(${props.src})` }}>
-            <FlexWrapper align={"center"} gap={"12"}>
+            <FlexWrapper align={"center"} gap={"12px"}>
                 <Avatar src={props.avatar} alt=""/>
-                <FlexWrapper direction={"column"}>
+                <FlexWrapper direction={"column"} gap={"4px"}>
                     <Status>Owner</Status>
                     <Name>{props.name}</Name>
                 </FlexWrapper>
@@ -24,13 +24,14 @@ export const Artist = (props: ArtistPropsType) => {
 };
 
 const StyledArtist = styled.div`
-  position: relative;
+  padding: 24px;
   display: flex;
   align-items: flex-end;
-  //width: 300px;
   min-height: 311px;
   background-size: cover;
   border-radius: 16px;
+  
+  position: relative;
   z-index: 1;
   
   &::before {
@@ -45,7 +46,6 @@ const StyledArtist = styled.div`
     z-index: -1;
   }
   
-
   &:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -61,20 +61,26 @@ const StyledArtist = styled.div`
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  &:nth-child(4) {
+
+  ${FlexWrapper} {
+    height: unset;
   }
-  &:nth-child(5) {
-  }
+  
 `
 
 const Avatar = styled.img`
-  
+  width: 48px;
+  height: 48px;
 `
 
 const Status = styled.span`
-  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
 `
 
 const Name = styled.p`
-  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
 `
