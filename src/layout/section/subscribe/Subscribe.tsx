@@ -12,7 +12,7 @@ export const Subscribe = () => {
     return (
         <StyledCreate>
             <Container>
-                <FlexWrapper justify={"space-between"} align={"center"}>
+                <FlexWrapper justify={"space-between"} align={"center"} gap={"10px"} wrap={"wrap"}>
                     <Images>
                         <Image src={subscribeImage1} alt=""/>
                         <Image src={subscribeImage2} alt=""/>
@@ -36,7 +36,13 @@ export const Subscribe = () => {
 };
 
 const StyledCreate = styled.section`
-
+    ${Container} > ${FlexWrapper} {
+      @media screen and (max-width: 1156px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 68px;
+      }
+    }
 `
 
 const Images = styled.div`
@@ -44,20 +50,44 @@ const Images = styled.div`
   height: 421px;
   
   position: relative;
+
+  @media ${theme.media.tablet} {
+    width: 343px;
+    height: 250px;
+  }
 `
 
 const Image = styled.img`
+  object-fit: cover;
+  border-radius: 16px;
+  
   &:first-child {
+    transform: rotate(-11deg);
     max-width: 410px;
     position: absolute;
     top: 0;
     left: 0;
+
+    @media ${theme.media.tablet} {
+      width: 224px;
+      height: 203px;
+    }
   }
+  
   &:last-child {
     max-width: 282px;
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media ${theme.media.tablet} {
+      width: 152px;
+      height: 189px;
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    border-radius: 20px;
   }
 `
 
@@ -70,6 +100,11 @@ const Text = styled.p`
   font-size: 16px;
   line-height: 160%;
   margin: 20px 0 40px;
+
+  @media ${theme.media.tablet} {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 `
 
 const Form = styled.form`
@@ -80,6 +115,18 @@ const Form = styled.form`
     top: 4px;
     right: 4px;
     bottom: 4px;
+
+    @media ${theme.media.mobile} {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      margin-top: 20px;
+    }
+  }
+
+  @media ${theme.media.mobile} {
+    text-align: center;
   }
 `
 
