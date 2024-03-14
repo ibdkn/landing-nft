@@ -16,7 +16,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"} gap={"48px"}>
                     <Info>
                         <Logo/>
                         <Text>
@@ -50,7 +50,7 @@ export const Footer = () => {
                         </div>
                     </FlexWrapper>
                 </FlexWrapper>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} gap={"16px"}>
                     <Copyright>
                         © Copyright 2023 - Creativeart
                     </Copyright>
@@ -74,11 +74,33 @@ const StyledFooter = styled.footer`
       margin-bottom: 48px;
       border-bottom: 1px solid #ffffff;
     }
+
+    > ${FlexWrapper} {
+      @media ${theme.media.mobile} {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    padding: 40px 0;
   }
 `
 
 const Info = styled.div`
   max-width: 272px;
+
+  + ${FlexWrapper} {
+    @media ${theme.media.tablet} {
+      gap: 32px;
+    }
+    
+    @media ${theme.media.mobile} {
+      flex-direction: column;
+      //flex-wrap: wrap;
+      //justify-content: flex-start;
+    }
+  }
 `
 
 const Text = styled.p`
@@ -115,6 +137,11 @@ const Terms = styled.p`
   
   & a:hover {
     color: ${theme.colors.accent};
+  }
+
+  @media ${theme.media.mobile} {
+    flex-direction: column;
+    gap: 16px;
   }
 `
 
