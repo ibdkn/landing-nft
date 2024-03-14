@@ -38,6 +38,12 @@ const StyledPromotion = styled.div`
     width: 100%;
     margin-top: 24px;
   }
+
+  @media screen and (max-width: 1138px) {
+    max-width: 224px;
+    right: 0;
+    bottom: 0;
+  }
 }
 `
 
