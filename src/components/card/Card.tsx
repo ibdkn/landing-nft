@@ -15,26 +15,28 @@ type CardPropsType = {
 export const Card = (props: CardPropsType) => {
     return (
         <StyledCard>
-            <Image src={props.src} alt=""/>
-            <FlexWrapper justify={"space-between"} align={"center"}>
-                <Title>{props.title}</Title>
-                <FlexWrapper align={"center"}>
-                    <Icon iconId={"cardIcon"} width={"24"} height={"25"} viewBox={"0 0 24 25"}/>
-                    <Currency>{props.price}ETH</Currency>
-                </FlexWrapper>
-            </FlexWrapper>
-            <Action>
-                <FlexWrapper justify={"space-between"}>
-                    <FlexWrapper direction={"column"} gap={"4px"}>
-                        <EndingTitle>Ending In</EndingTitle>
-                        <FlexWrapper align={"center"} gap={"12px"}>
-                            <Icon iconId={"clock"} width={"24"} height={"25"} viewBox={"0 0 24 25"}/>
-                            <Timer>03:24:56</Timer>
-                        </FlexWrapper>
+            <CardWrapper>
+                <Image src={props.src} alt=""/>
+                <FlexWrapper justify={"space-between"} align={"center"}>
+                    <Title>{props.title}</Title>
+                    <FlexWrapper align={"center"}>
+                        <Icon iconId={"cardIcon"} width={"24"} height={"25"} viewBox={"0 0 24 25"}/>
+                        <Currency>{props.price}ETH</Currency>
                     </FlexWrapper>
-                    <Button btnType={"outline"}>Place A Bid</Button>
                 </FlexWrapper>
-            </Action>
+                <Action>
+                    <FlexWrapper justify={"space-between"}>
+                        <FlexWrapper direction={"column"} gap={"4px"}>
+                            <EndingTitle>Ending In</EndingTitle>
+                            <FlexWrapper align={"center"} gap={"12px"}>
+                                <Icon iconId={"clock"} width={"24"} height={"25"} viewBox={"0 0 24 25"}/>
+                                <Timer>03:24:56</Timer>
+                            </FlexWrapper>
+                        </FlexWrapper>
+                        <Button btnType={"outline"}>Place A Bid</Button>
+                    </FlexWrapper>
+                </Action>
+            </CardWrapper>
         </StyledCard>
     );
 };
@@ -67,5 +69,10 @@ const EndingTitle = styled.h4`
   font-size: 14px;
   line-height: 160%;
   color: #838382;
+`
+
+const CardWrapper = styled.div`
+  max-width: 410px;
+  width: 100%;
 `
 
