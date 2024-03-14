@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../icon/Icon";
+import {font} from "../../styles/Common";
+import {theme} from "../../styles/Theme";
 
 export const Logo = () => {
     return (
@@ -20,15 +22,17 @@ const StyledLogo = styled.a`
 `
 
 const Name = styled.span`
-  font-family: "Canela Trial", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
+  ${font({family: '"Canela Trial", sans-serif', weight: 500, Fmax: 32, Fmin: 24})};
   line-height: 120%;
-  color: #fff;
+  color: ${theme.colors.font};
   
   transform: translateY(15px);
   
   span {
-    color: #d3f85a;
+    color: ${theme.colors.accent};
+  }
+
+  @media ${theme.media.mobile} {
+    transform: translateY(3px);
   }
 `
