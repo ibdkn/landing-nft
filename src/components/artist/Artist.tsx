@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {FlexWrapper} from "../FlexWrapper";
+import {theme} from "../../styles/Theme";
 
 type ArtistPropsType = {
     src?: string,
@@ -49,21 +50,43 @@ const StyledArtist = styled.div`
   &:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 2;
+
+    @media ${theme.media.tablet} {
+      grid-column-start: unset;
+      grid-column-end: unset;
+    }
   }
+  
   &:nth-child(2) {
-    
     grid-column-start: 2;
     grid-column-end: 3;
+    
+    @media ${theme.media.tablet} {
+      grid-column-start: unset;
+      grid-column-end: unset;
+    }
   }
+  
   &:nth-child(3) {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+
+    @media ${theme.media.tablet} {
+      grid-column-start: unset;
+      grid-column-end: unset;
+      grid-row-start: unset;
+      grid-row-end: unset;
+    }
   }
 
   ${FlexWrapper} {
     height: unset;
+  }
+  
+  @media ${theme.media.tablet} {
+    
   }
   
 `
