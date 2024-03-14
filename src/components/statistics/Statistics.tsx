@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Common";
 
 type StatisticsPropsType = {
     number: string,
@@ -29,9 +30,7 @@ const StyledStatistics = styled.div`
 `
 
 const Number = styled.div`
-  font-family: ${theme.fonts.secondary};
-  font-weight: 500;
-  font-size: 48px;
+  ${font({family: '"Canela Trial", sans-serif', weight: 500, Fmax: 48, Fmin: 31})};
   line-height: 120%;
   
   span {
