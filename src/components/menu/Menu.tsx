@@ -22,6 +22,10 @@ const StyledMenu = styled.nav`
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `
 
 const ListItem = styled.li`
