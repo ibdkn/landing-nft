@@ -15,6 +15,7 @@ import avatar3 from "../../../assets/images/artists/avatar-3.png"
 import avatar4 from "../../../assets/images/artists/avatar-4.png"
 import avatar5 from "../../../assets/images/artists/avatar-5.png"
 import { Container } from '../../../components/Container';
+import {theme} from "../../../styles/Theme";
 
 export const Artists = () => {
     return (
@@ -24,7 +25,9 @@ export const Artists = () => {
                     <SectionTitle>
                         Popular <span>Artists</span> On This Week
                     </SectionTitle>
-                    <Button btnType={"primary"}>See All</Button>
+                    <DesktopButtonWrapper>
+                        <Button btnType={"primary"}>See All</Button>
+                    </DesktopButtonWrapper>
                 </FlexWrapper>
                 <ArtistsList>
                     <Artist src={artistImage1} name={"Osvaldo Percy"} avatar={avatar1}/>
@@ -33,6 +36,9 @@ export const Artists = () => {
                     <Artist src={artistImage4} name={"Sebastian waltan"} avatar={avatar4}/>
                     <Artist src={artistImage5} name={"Abraham Zack"} avatar={avatar5}/>
                 </ArtistsList>
+                <MobileButtonWrapper>
+                    <Button btnType={"primary"}>See All</Button>
+                </MobileButtonWrapper>
             </Container>
         </StyledArtists>
     );
@@ -44,16 +50,35 @@ const StyledArtists = styled.section`
   }
   
   ${Container} > ${FlexWrapper} {
-    margin-bottom: 64px;
+    @media ${theme.media.tablet} {
+      justify-content: center;
+      margin-bottom: 32px;
+    }
   }
 `
 
 const ArtistsList = styled.div`
   display: grid;
   gap: 30px;
-  
-  //display: flex;
-  //justify-content: center;
-  //flex-wrap: wrap;
-  //gap: 30px;
+  margin-top: 64px;
+
+  @media ${theme.media.tablet} {
+    gap: 16px;
+    margin: 32px auto;
+  }
+`
+
+const MobileButtonWrapper = styled.div`
+  display: none;
+
+  @media ${theme.media.tablet} {
+    display: block;
+    text-align: center;
+  }
+`
+
+const DesktopButtonWrapper = styled.div`
+    @media ${theme.media.tablet} {
+      display: none;
+    }
 `
