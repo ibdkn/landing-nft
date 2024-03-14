@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    min-width: 375px;
     margin: 0;
     font-family: "Inter", sans-serif;
     color: ${theme.colors.font};
@@ -39,5 +40,9 @@ export const GlobalStyles = createGlobalStyle`
   section {
     padding: 92px 0;
     background-color: ${theme.colors.primaryBg};
+
+    @media ${theme.media.tablet} {
+      padding: 40px 0;
+    }
   }
 `
