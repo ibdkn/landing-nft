@@ -7,4 +7,8 @@ export const StyledCard = styled.div`
   border-top: 1px solid ${theme.colors.accent};
   border-radius: 16px;
   height: max-content;
+
+  @media screen and (max-width: 1138px) {
+    padding: 12px;
+  }
 `
